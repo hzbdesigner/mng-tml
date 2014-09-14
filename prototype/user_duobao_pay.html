@@ -1,0 +1,104 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>用户夺宝支付</title>
+		<meta charset="utf-8" >
+		<meta http-equiv="X-UA-Compatible" content="edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta name="apple-mobile-web-app-status-bar-style" content="red">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/page.css" rel="stylesheet" />
+		<!-- 全局变量 -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+<body>
+<div class="boxs cen_au wid_au">
+	<div class="bg_fff">
+		<ul class="dis_tab">
+			<li class="dis_tab_cel row_33 pd_al05em">
+				<a href="javascript:void(0)">
+					<img src="img/a.jpg" alt="" height="70px">
+				</a>
+			</li>
+			<li class="dis_tab_cel row_75 pd_al05em line15em">
+				<div class="ellipsis check_wida">
+					<a href="" class="ft_03">
+						[第07期]商品名称商品名称商品名商品名称v商品名称商品名称商品名商品名称商品名
+					</a>
+				</div>
+				<font class="ft_999 ft12">
+					总需：5400人次&nbsp;&nbsp;&nbsp;&nbsp;我的参与：5人次
+				</font><br/>
+				<table id="add_num" class="t_al_c" border="1" borderColor="#f2f2f2">
+					<tr>
+						<td class="row_30"><a href="javascript:void(0)" class="full_scre ft18">&minus;</a></td>
+						<td><input type="text" value="1" id="aTex"></td>
+						<td class="row_30"><a href="javascript:void(0)" class="full_scre ft18">&plus;</a></td>
+					</tr>
+				</table>
+			</li>
+		</ul>
+		<div class="bor_1 pd_al1em pd_05em">
+			总计：1元  &nbsp;<font class="ft_999 ft12">（ 中奖率 2.5% ）</font>
+		</div>
+	</div>
+	<div class="emp20"></div>
+	<div class="bg_fff">
+		<div class="bor_1 pd_al1em pd_05em ft_999 line15em ft12">
+			<font class="ft_333 ft14">张三李四</font>  &nbsp;15210567035<br/>
+			北京市 朝阳区 慈云寺远洋商务楼1405
+		</div>
+		<a href="javascript:void(0)" class="bor_1 pd_al1em boxs ft_999 line15em t_al_c bor_no_t dis_in_b row_100 hov_eb">
+			设置收货人信息
+		</a>
+	</div>
+	<div class="emp20"></div>
+	<div class="pd_05em">
+		<a href="user_duobao_pay_succes.html" class="ft_fff boxs pd_al1em btn-success row_100">
+			<span class="fonticon fonticon_share"></span>
+			微信支付
+		</a>
+		<div class="emp10"></div>
+		<a href="javascript:history.go(-1)" class="ft_999 t_al_c dis_in_b boxs rad_4 pd_al1em row_100 bg_eee">
+			取 消
+		</a>
+	</div>
+</div>
+
+<body>
+<script>
+	/*  增减数字 */
+	var oTab = document.getElementById('add_num');
+	var oMin = oTab.tBodies[0].rows[0].cells[0];
+	var oMax = oTab.tBodies[0].rows[0].cells[2];
+	var timer;
+		oMin.onmousedown=function(ev){
+			ev.preventDefault();
+			clearInterval(timer);
+			timer=setInterval(plusNum,200)
+		}
+		oMax.onmousedown=function(ev){
+			ev.preventDefault();
+			clearInterval(timer);
+			timer=setInterval(addNum,200)
+		}
+		oMin.onclick = function(ev){ev.preventDefault();plusNum()};
+		oMax.onclick=function(ev){ev.preventDefault();addNum()};
+		function plusNum(){
+			var a=document.getElementById('aTex').value;
+			if(a > 0){
+				a--;
+			}
+			document.getElementById('aTex').value = a;
+		}
+		function addNum(){
+			document.getElementById('aTex').value++;
+		}
+		oMin.onmouseup = oMax.onmouseup =function(){
+			clearInterval(timer);
+		}		
+</script>
+</html>

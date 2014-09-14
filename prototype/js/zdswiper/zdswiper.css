@@ -1,0 +1,308 @@
+/* Basic Swiper Styles */
+.swiper-container {
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
+    /* Fix of Webkit flickering */
+    z-index:1;
+}
+.swiper-wrapper {
+    position:relative;
+    width:100%;
+    -webkit-transition-property:-webkit-transform, left, top;
+    -webkit-transition-duration:0s;
+    -webkit-transform:translate3d(0px,0,0);
+    -webkit-transition-timing-function:ease;
+    
+    -moz-transition-property:-moz-transform, left, top;
+    -moz-transition-duration:0s;
+    -moz-transform:translate3d(0px,0,0);
+    -moz-transition-timing-function:ease;
+    
+    -o-transition-property:-o-transform, left, top;
+    -o-transition-duration:0s;
+    -o-transform:translate3d(0px,0,0);
+    -o-transition-timing-function:ease;
+    -o-transform:translate(0px,0px);
+    
+    -ms-transition-property:-ms-transform, left, top;
+    -ms-transition-duration:0s;
+    -ms-transform:translate3d(0px,0,0);
+    -ms-transition-timing-function:ease;
+    
+    transition-property:transform, left, top;
+    transition-duration:0s;
+    transform:translate3d(0px,0,0);
+    transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+}
+.swiper-slide {
+    float: left;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+    -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+    -ms-touch-action: pan-x;
+}
+
+
+/* gallery-app.css */
+.swiper-container-galley{
+    background: #333;
+    color: #fff;
+    position: relative;
+    z-index:1;
+    overflow:hidden;
+}
+.swiper-container-galley .swiper-wrapper {
+    width: 100%;
+    position:relative;
+    z-index:2;
+}
+ .swiper-container-galley .swiper-slide {
+    text-align: center;
+    width:100%;
+}
+.swiper-wrapper,.swiper-slide{
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        :focus {
+        outline: 0;
+        border:none;
+        color: rgba(0, 0, 0, 0);
+        }
+
+ .swiper-container-galley .swiper-slide img {
+    display: block;
+    box-sizing:border-box;
+    position: relative;
+    z-index:3;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-backface-visibility: visible;
+}
+                /*pagination*/
+
+.swiper-container-galley .pagination {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 28px;
+    height: 28px;
+    z-index: 9999;
+}
+.swiper-container-galley .swiper-pagination-switch {
+    vertical-align: middle;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: rgba(255,255,255,0);
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+.swiper-container-galley .swiper-active-switch {
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    border:none;
+    border-radius: 50%;
+}
+
+
+
+/*custom css end*/
+
+@media (max-width: 321px) {
+    .swiper-container-galley .swiper-slide  img {
+        width:320px;
+        height:320px;
+    }
+    .swiper-container-galley{
+        height: 320px;
+    }
+    .swiper-container-galley{
+        height: 320px;
+    }
+    .swiper-container-galley .swiper-slide img{
+        width:320px;
+        height:320px;
+    }
+  }
+  
+  @media (min-width: 322px) {
+    .swiper-container-galley .swiper-slide  img {
+            width:100%;
+            height:400px;
+        }
+    .swiper-container-galley{
+        height: 400px;
+    }
+    .swiper-container-galley{
+        height: 400px;
+    }
+    .swiper-container-galley .swiper-slide img{
+        width:100%;
+        height:400px;
+    }
+  }
+.swiper-container-galley .swiper-slide img{
+        width:400px\9;
+    }
+ @media (max-width: 321px) {
+    .myindex .swiper-container-galley .swiper-slide  img {
+        width:320px;
+        height:160px;
+    }
+    .myindex .swiper-container-galley{
+        height: 160px;
+    }
+    .myindex .swiper-container-galley{
+        height: 160px;
+    }
+    .myindex .swiper-container-galley .swiper-slide img{
+        width:320px;
+        height:160px;
+    }
+  }
+
+  @media (min-width: 322px) {
+    .myindex .swiper-container-galley .swiper-slide  img {
+            width:400px;
+            height:200px;
+        }
+    .myindex .swiper-container-galley{
+        height: 200px;
+    }
+    .myindex .swiper-container-galley{
+        height: 200px;
+    }
+    .myindex .swiper-container-galley .swiper-slide img{
+        width:400px;
+        height:200px;
+    }
+  }
+
+    
+/* gallery-app.css end */
+/*test.phtml*/
+      .tabs {
+        width:320px;
+        margin: 0 auto;
+        /*border-bottom:1px solid #eee; */
+      }
+      .tabs a{
+        display: block;
+        float: left;
+        width: 104px;
+        display:inline;
+        color: #333;
+        text-align: center;
+        background: #fff;
+        line-height: 40px;
+        font-size: 14px;
+        text-decoration: none;
+        border-right:1px solid #ddd;
+      }
+      .tabs a.last{
+        border-right: none;
+      }
+      .tabs a.active {
+        background: #eee;
+      }
+      .swiper-container-tab {
+        background: transparent;
+        min-height: 250px;
+        border-radius: 0 0 5px 5px;
+        margin-left:-1px;
+        width:100%;
+        max-width: 400px;
+        border-top: 0;
+      }
+      .swiper-container-tab .swiper-slide {
+        min-height: 250px;
+        width: 100%;
+        background: none;
+        color: #fff;
+        overflow:hidden;
+      }
+      .swiper-container-tab .content-slide {
+        padding: 15px;
+      }
+      .swiper-container-tab .content-slide .list-group-item{
+        padding:0px;
+      }
+
+/* my appstore */
+.activity-container{
+  height:100px;
+  width: 100%;
+  background: #fff;
+}
+.activity-container .swiper-wrapper{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.activity-container .swiper-slide {
+height: 100px !important;
+width: 200px !important;
+padding-right: 10px;
+}
+.activity-container .swiper-slide a{
+display: block;
+width: 100%;
+height:100%;
+}
+.activity-container .swiper-slide a img{
+border-radius: 6px;
+background: #333;
+box-shadow: none;
+opacity: 1;
+}
+
+/* activity-container-2x */
+ .activity-container-2x{
+  height:120px;
+  width: 100%;
+  background: #fff;
+}
+.activity-container-2x .swiper-wrapper{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.activity-container-2x .swiper-slide {
+height: 120px !important;
+width: 240px !important;
+padding-right: 10px;
+}
+.activity-container-2x .swiper-slide a{
+display: block;
+width: 100%;
+height:100%;
+}
+.activity-container-2x .swiper-slide a img{
+border-radius: 6px;
+background: #333;
+box-shadow: none;
+opacity: 1;
+}

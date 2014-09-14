@@ -1,0 +1,297 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  touch-action:none;
+  position:relative;
+  left:-0px;
+  width:320px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u0 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:320px;
+  height:100px;
+  font-size:16px;
+  color:#000000;
+  text-align:left;
+  line-height:20px;
+}
+#u0_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:320px;
+  height:100px;
+}
+#u1 {
+  position:absolute;
+  left:10px;
+  top:42px;
+  width:300px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u2 {
+  position:absolute;
+  left:10px;
+  top:10px;
+  width:80px;
+  height:80px;
+}
+#u2_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:80px;
+  height:80px;
+}
+#u3 {
+  position:absolute;
+  left:10px;
+  top:32px;
+  width:60px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u4 {
+  position:absolute;
+  left:90px;
+  top:9px;
+  width:230px;
+  height:80px;
+  text-align:left;
+  line-height:20px;
+}
+#u4_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:230px;
+  height:80px;
+}
+#u5 {
+  position:absolute;
+  left:10px;
+  top:0px;
+  width:210px;
+  word-wrap:break-word;
+}
+#u6 {
+  position:absolute;
+  left:0px;
+  top:99px;
+  width:320px;
+  height:100px;
+  font-size:16px;
+  color:#000000;
+  text-align:left;
+  line-height:20px;
+}
+#u6_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:320px;
+  height:100px;
+}
+#u7 {
+  position:absolute;
+  left:10px;
+  top:42px;
+  width:300px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u8 {
+  position:absolute;
+  left:10px;
+  top:109px;
+  width:80px;
+  height:80px;
+}
+#u8_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:80px;
+  height:80px;
+}
+#u9 {
+  position:absolute;
+  left:10px;
+  top:32px;
+  width:60px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u10 {
+  position:absolute;
+  left:90px;
+  top:108px;
+  width:230px;
+  height:80px;
+  text-align:left;
+  line-height:20px;
+}
+#u10_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:230px;
+  height:80px;
+}
+#u11 {
+  position:absolute;
+  left:10px;
+  top:0px;
+  width:210px;
+  word-wrap:break-word;
+}
+#u12 {
+  position:absolute;
+  left:0px;
+  top:198px;
+  width:320px;
+  height:100px;
+  font-size:16px;
+  color:#000000;
+  text-align:left;
+  line-height:20px;
+}
+#u12_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:320px;
+  height:100px;
+}
+#u13 {
+  position:absolute;
+  left:10px;
+  top:42px;
+  width:300px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u14 {
+  position:absolute;
+  left:10px;
+  top:208px;
+  width:80px;
+  height:80px;
+}
+#u14_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:80px;
+  height:80px;
+}
+#u15 {
+  position:absolute;
+  left:10px;
+  top:32px;
+  width:60px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u16 {
+  position:absolute;
+  left:90px;
+  top:207px;
+  width:230px;
+  height:80px;
+  text-align:left;
+  line-height:20px;
+}
+#u16_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:230px;
+  height:80px;
+}
+#u17 {
+  position:absolute;
+  left:10px;
+  top:0px;
+  width:210px;
+  word-wrap:break-word;
+}
+#u18 {
+  position:absolute;
+  left:10px;
+  top:314px;
+  width:300px;
+  height:216px;
+  font-family:'Helvetica-Bold', 'Helvetica Bold', 'Helvetica';
+  font-weight:700;
+  font-style:normal;
+  text-decoration:none;
+  text-align:left;
+  line-height:28px;
+}
+#u18_img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:300px;
+  height:216px;
+}
+#u19 {
+  position:absolute;
+  left:10px;
+  top:10px;
+  width:280px;
+  word-wrap:break-word;
+}
+body.a {  background-color:rgba(255, 255, 255, 1);
+  background-image:none;
+  touch-action:none;
+  position:relative;
+  left:-0px;
+  width:320px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+}
+#u0.a {
+}
+#u2.a {
+}
+#u4.a {
+}
+#u4_img.a {
+}
+#u5.a {
+}
+#u6.a {
+}
+#u8.a {
+}
+#u10.a {
+}
+#u10_img.a {
+}
+#u11.a {
+}
+#u12.a {
+}
+#u14.a {
+}
+#u16.a {
+}
+#u18.a {
+}
+#u18_img.a {
+}
+#u19.a {
+}

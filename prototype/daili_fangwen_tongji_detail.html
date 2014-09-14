@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" >
+		<title>代理访问统计详情页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta name="apple-mobile-web-app-status-bar-style" content="red">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/page.css" rel="stylesheet" />
+		<!-- 全局变量 -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+<body>
+<div class="boxs cen_au wid_au">
+	<div class="emp10"></div>
+	<div style="width:100%" class="pd_1em boxs">
+			<div>
+				<canvas id="canvas" height="450" width="600"></canvas>
+			</div>
+		</div>
+	<div class="emp20"></div>
+		<h4 class="t_al_c">
+			按天
+			<span class="fonticon fonticon_chevron_down" style="font-weight:100"></span>
+		</h4>
+	<div class="emp20"></div>
+	<table class="wid_au t_al_c ft12 bg_fff tab_a" id="tab_chart">
+		<tr><td>6月14日</td><td class="row_25">24人</td></tr>
+		<tr><td>6月13日</td><td>32人</td></tr>
+		<tr><td>6月12日</td><td>30人</td></tr>
+		<tr><td>6月11日</td><td>80人</td></tr>
+		<tr><td>6月10日</td><td>56人</td></tr>
+	</table>
+</div>
+	<script src="js/loadmyfun.js"></script>
+	<!-- need chart -->
+	<script src="js/loadmyfunchart.js"></script>
+</body>
+</html>

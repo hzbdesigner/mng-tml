@@ -1,0 +1,135 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>管理增加产品</title>
+		<meta charset="utf-8" >
+		<meta http-equiv="X-UA-Compatible" content="edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta name="apple-mobile-web-app-status-bar-style" content="red">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/page.css" rel="stylesheet" />
+		<!-- 全局变量 -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+<body>
+<div class="boxs cen_au wid_au pd_al05em">
+	<div class="bg_fff pd_al1em boxs bor_1">
+		<a href="javascript:void(0)" class="bor_1 dis_in_b t_al_c pd_al15em">
+			<span class="fonticon fonticon_fa_plus ft40 ft_999" style="width:auto;height:auto;line-height:.7;"></span>
+		</a>
+	</div>
+	<div class="emp20"></div>
+	<input type="text" class="pd_al1em ft_999 row_100 bor_1" placeholder="添加名称(必填)">
+	<textarea name="" id="" cols="30" rows="10" placeholder="添加描述(可选)" class="row_100 pd_al1em bor_1 bor_no_t"></textarea>
+	<input type="text" class="pd_al1em ft_999 row_100 bor_1 bor_no_t" placeholder="所属商家">
+		<div class="emp10"></div>
+	<table class="wid_au ft_a1 bg_fff bor_1" id="tab_data_log">
+		<tr>
+			<td class="row_40 bor_r1">
+				价格a：<input type="text" value="" class="row_50 pd_al05em">
+			</td>
+			<td>
+				库存：<input type="text" value="" class="row_50 pd_al05em">
+			</td>
+		</tr>
+		<tr>
+			<td class="bor_r1">
+				类目：
+				<div class="row_50 myselect">
+					<input type="text" value="化学" readonly="true" class="myselectit" />
+					<div>
+						<a href="javascript:void(0)">英语</a>
+						<a href="javascript:void(0)">数学</a>
+						<a href="javascript:void(0)">语文</a>
+					</div>
+					<span class="myselect_btn">
+						<i class="fonticon fonticon_chevron_up"></i>
+					</span>
+				</div>
+			</td>
+			<td>
+				开始时间:
+				<div class="row_50 myselect addDate">
+					<input type="text" value="2014-8-25" readonly="true" class="myselectit" />
+					<div>
+						<a href="javascript:void(0)">2014-8-26</a>
+						<a href="javascript:void(0)">2014-8-27</a>
+						<a href="javascript:void(0)">2014-8-28</a>
+					</div>
+					<span class="myselect_btn">
+						<i class="fonticon fonticon_chevron_up"></i>
+					</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="emp20"></div>
+	<div class="pd_05em">
+		<a href="javascript:void(0)" class="pd_al1em btn-danger row_100 mar_05em">
+			提 交
+		</a>
+	</div>
+</div>
+
+<body>
+<script>
+	function getClass(obj,sclass){
+		var allTag = obj.getElementsByTagName('*')||document.getElementsByTagName('*');
+		var arr=[];
+		for(var i=0;i<allTag.length;i++){
+			if(allTag[i].className.indexOf(sclass)!=-1){
+				arr.push(allTag[i])
+			}
+		}
+		return arr;
+	}
+
+	function myselectfun(clickInput,btn){
+		for(var i=0;i<clickInput.length;i++){
+			var aA = clickInput[i].parentNode.getElementsByTagName('div')[0].getElementsByTagName('a');
+			
+			for(var o=0;o<aA.length;o++){
+				aA[o].onclick=function(){
+					var oInput = this.parentNode.parentNode.getElementsByTagName('input')[0];
+					oInput.value = this.innerHTML;
+					var _this=this;
+					setTimeout(function(){
+						_this.parentNode.style.display="none";
+					},100)
+				}
+			}
+
+			clickInput[i].onclick= btn[i].onclick = function(){
+				console.log()
+				var posDiv =this.parentNode.getElementsByTagName('div')[0];
+				if(posDiv.style.display=="block"){
+					posDiv.style.display="none";
+				}
+				else{
+					posDiv.style.display="block";
+				}
+			}
+			clickInput[i].onblur=function(){
+				var _this = this;
+				setTimeout(function(){
+					_this.parentNode.getElementsByTagName('div')[0].style.display="none";
+				},100)
+			}
+			
+
+		}
+	}
+	function addDateFun(){
+
+	}
+
+	var oParent=document.getElementById('tab_data_log');
+	var myselects = getClass(oParent,"myselectit");//触发input 
+	var myselect_btns = getClass(oParent,"myselect_btn"); // 触发btn
+
+	myselectfun(myselects,myselect_btns)
+</script>
+</html>
